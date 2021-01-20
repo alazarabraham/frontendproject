@@ -13,6 +13,9 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
+import { FlatfileComponent } from './pages/ingestions/flatfile/flatfile.component';
+import { RdbmsComponent } from './pages/ingestions/rdbms/rdbms.component';
+import { StreamdataComponent } from './pages/ingestions/streamdata/streamdata.component';
 
 @NgModule({
   imports: [
@@ -29,4 +32,4 @@ import { ComponentsModule } from "./components/components.module";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

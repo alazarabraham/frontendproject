@@ -7,6 +7,9 @@ import { NotificationsComponent } from "../../pages/notifications/notifications.
 import { UserComponent } from "../../pages/user/user.component";
 import { TablesComponent } from "../../pages/tables/tables.component";
 import { TypographyComponent } from "../../pages/typography/typography.component";
+import { FlatfileComponent } from "src/app/pages/ingestions/flatfile/flatfile.component";
+import { RdbmsComponent } from "src/app/pages/ingestions/rdbms/rdbms.component";
+import { StreamdataComponent } from "src/app/pages/ingestions/streamdata/streamdata.component";
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 export const AdminLayoutRoutes: Routes = [
@@ -17,5 +20,10 @@ export const AdminLayoutRoutes: Routes = [
   { path: "user", component: UserComponent },
   { path: "tables", component: TablesComponent },
   { path: "typography", component: TypographyComponent },
+  { path: "ingestions/flatfile", component: FlatfileComponent },
+  { path: "ingestions/rdbms", component: RdbmsComponent },
+  { path: "ingestions/streamdata", component: StreamdataComponent },
+
+
   // { path: "rtl", component: RtlComponent }
 ];

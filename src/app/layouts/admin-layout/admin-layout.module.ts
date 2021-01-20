@@ -15,6 +15,9 @@ import { TypographyComponent } from "../../pages/typography/typography.component
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { FlatfileComponent } from "src/app/pages/ingestions/flatfile/flatfile.component";
+import { RdbmsComponent } from "src/app/pages/ingestions/rdbms/rdbms.component";
+import { StreamdataComponent } from "src/app/pages/ingestions/streamdata/streamdata.component";
 
 @NgModule({
   imports: [
@@ -32,7 +35,11 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     TypographyComponent,
     NotificationsComponent,
     MapComponent,
+    FlatfileComponent,
+    RdbmsComponent,
+    StreamdataComponent
+
     // RtlComponent
   ]
 })
-export class AdminLayoutModule {}
+export class AdminLayoutModule { }

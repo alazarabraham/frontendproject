@@ -35,13 +35,10 @@
 .off-canvas-sidebar {
 
   &,
-  &[data="red"] {
-    @include linear-gradient($primary-states, $primary);
-  }
-
   &[data="primary"] {
     @include linear-gradient($primary-states, $primary);
   }
+
 }
 
 @media screen and (max-width: 991px) {

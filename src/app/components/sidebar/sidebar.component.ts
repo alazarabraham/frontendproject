@@ -10,20 +10,20 @@ declare interface RouteInfo {
 export const ROUTES: RouteInfo[] = [
   {
     path: "/dashboard",
-    title: "Dashboard",
+    title: "Home",
     rtlTitle: "لوحة القيادة",
     icon: "icon-chart-pie-36",
     class: ""
   },
   {
-    path: "/icons",
+    path: "/ingestions/flatfile",
     title: "Ingest Flat File",
     rtlTitle: "الرموز",
     icon: "icon-atom",
     class: ""
   },
   {
-    path: "/maps",
+    path: "/ingestions/rdbms",
     title: "Ingest RDBMS",
     rtlTitle: "خرائط",
     icon: "icon-pin",
@@ -64,7 +64,14 @@ export const ROUTES: RouteInfo[] = [
     rtlTitle: "ار تي ال",
     icon: "icon-world",
     class: ""
-  }
+  },
+  {
+    path: "/ingestions/streamdata",
+    title: "Ingest Stream data",
+    rtlTitle: "ار تي ال",
+    icon: "icon-world",
+    class: ""
+  },
 ];
 
 @Component({
