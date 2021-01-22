@@ -1,0 +1,139 @@
+<div class=" content">
+    <div class=" row">
+        <div class=" col-md-12">
+            <div class=" card">
+              <div class=" card-body">
+                <div class=" places-buttons">
+                  <div class=" row">
+                    <div class=" col-md-6">
+                      <h2 class=" card-title">Ingest Flat File</h2>
+                    </div>
+                  </div>
+                  <div class=" row">
+                    <div class=" col-md-10 ml-auto mr-auto text-center">
+                      <div class=" row">
+                        <div class=" col-md-2">
+                            <span style="font-size: 300%; color:lightgray;">①</span>
+                            <p>Source data</p>
+                        </div>
+                        <div class=" col-md-1">
+                          <span style="font-size: 200%; color:blue;"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class=" col-md-2">
+                            <span style="font-size: 300%; color: blue;">②</span>
+                            <p>Configure Ingestion</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="border: 2px solid black;">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="card-title"><b style="font-weight:bold;">Table 1</b></h2>
+                            <button type="button" class="btn btn-secondary" style="float: right;"><svg style="float: right;" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                            </svg></button>
+                          <h3 class="card-title"><b>File Size:</b></h3>
+                          <div class="row" style="margin: 15px;">
+                            <input type="text" placeholder="Enter Destination Database Name..." id="searchbar">
+                          </div>
+                          <div class="row" style="margin: 15px;">
+                            <input type="text" placeholder="Enter Destination Table Name..." id="searchbar">
+                          </div>
+                        </div>
+                    </div>
+                      <div class="row">
+                        <table>
+                            <thead>
+                                <th colspan="3">Source</th>
+                                <th colspan="2">Destination
+                                    <button type="button" class="btn btn-secondary" style="float: right;"><a class="trigger_popup_fricc">Set Column Order</a>
+                                        <div class="hover_bkgr_fricc">
+                                            <span class="helper"></span>
+                                                <div>
+                                                    <div class="popupCloseButton">&times;</div>
+                                                    <p>Add any HTML content<br />inside the popup box!</p>
+                                                </div>
+                                        </div>
+                                    </button>
+                                </th>
+                            </thead>
+                              <tr>
+                                  <td colspan="2">Sample Data</td>
+                                  <td>Attribute Name</td>
+                                  <td>Destination Column Name</td>
+                                  <td>Data Type</td>
+                              </tr>
+                              <tr>
+                                  <td style="width: 50px; text-align: center;">
+                                      1
+                                  </td>
+                                  <td style="font-size: 15px;">
+                                        A lot of random data.A lot of random data.
+                                      A lot of random data.A lot of random data.
+                                      A lot of random data.A lot of random data.
+                                      A lot of random data.A lot of random data.
+                                  </td>
+                                  <td style="width: 15%;">
+                                      <tr>
+                                        <input type="checkbox" checked="checked" style="height: 25px; width: 25px; padding: 10px; margin: 25px; float: left; margin-top: 5px;">
+                                        <div style="margin-left: 25px;">
+                                            Transaction_date
+                                        </div>
+                                      </tr>
+                                      <tr>
+                                        <input type="checkbox" checked="checked" style="height: 25px; width: 25px; padding: 10px; margin: 25px; float: left; margin-top: 5px;">
+                                        <div style="margin-left: 25px;">
+                                            Product
+                                        </div>
+                                      </tr>
+                                      <tr>
+                                        <input type="checkbox" checked="checked" style="height: 25px; width: 25px; padding: 10px; margin: 25px; float: left; margin-top: 5px;">
+                                        <div style="margin-left: 25px;">
+                                            Price
+                                        </div>
+                                      </tr>
+                                  </td>
+                                  <td id="buttonstandard" align="center">
+                                    <button class="dropbtn">Transaction_date
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                                  <button class="dropbtn">Transaction_date
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                                  <button class="dropbtn">Transaction_date
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                                </td>
+                                <td id="buttonstandard" align="center">
+                                    <button class="dropbtn">Data
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <button class="dropbtn">Data
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <button class="dropbtn">Data
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                </td>                            
+                              </tr>
+                            </table>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div>
+                                    <button type="button" class="btn btn-dark">Cancel</button>
+                                    <button style="margin-left: 1200px;" type="button" class="btn btn-dark"><a href="/#/ingestions/sourcedata">Previous</a></button>
+                                    <button style="float: right;" class=" btn btn-fill btn-primary" type="submit" >Ingest</button>
+                                    </div>
+                                  </div>
+                            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+  </div>

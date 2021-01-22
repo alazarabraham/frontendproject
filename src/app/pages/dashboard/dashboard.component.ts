@@ -26,14 +26,19 @@ export class DashboardComponent implements OnInit {
     return this.httpClient.get<Ingestion[]>(this.ingestionEndpoint);
 
   }
+  
 
 
   ngOnInit() {
+    var body = document.getElementsByTagName('body')[0];
+    body.classList.add("white-content");
     this.getData().
       subscribe(data => {
         console.log(data);
         this.ingestionArray = data;
         console.log
+        
+
       })
 
     var gradientChartOptionsConfigurationWithTooltipBlue: any = {

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FlatfileComponent } from './flatfile.component';
+import { SourceDataComponent } from './source-data.component';
 
-describe('FlatfileComponent', () => {
-  let component: FlatfileComponent;
-  let fixture: ComponentFixture<FlatfileComponent>;
+describe('SourceDataComponent', () => {
+  let component: SourceDataComponent;
+  let fixture: ComponentFixture<SourceDataComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FlatfileComponent ]
+      declarations: [ SourceDataComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FlatfileComponent);
+    fixture = TestBed.createComponent(SourceDataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

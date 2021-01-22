@@ -13,9 +13,10 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
-import { FlatfileComponent } from './pages/ingestions/flatfile/flatfile.component';
 import { RdbmsComponent } from './pages/ingestions/rdbms/rdbms.component';
 import { StreamdataComponent } from './pages/ingestions/streamdata/streamdata.component';
+import { ConfigureIngestionComponent } from './pages/ingestions/flatfile/configure-ingestion/configure-ingestion.component';
+import { SourceDataComponent } from './pages/ingestions/flatfile/source-data/source-data.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,7 @@ import { StreamdataComponent } from './pages/ingestions/streamdata/streamdata.co
     AppRoutingModule,
     ToastrModule.forRoot()
   ],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ConfigureIngestionComponent, SourceDataComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

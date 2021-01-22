@@ -261,7 +261,7 @@ caption {
   padding-bottom: 1rem;
   color: #6c757d;
   text-align: left;
-  caption-side: bottom;
+  caption-side: top;
 }
 
 th {

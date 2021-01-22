@@ -15,9 +15,10 @@ import { TypographyComponent } from "../../pages/typography/typography.component
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { FlatfileComponent } from "src/app/pages/ingestions/flatfile/flatfile.component";
 import { RdbmsComponent } from "src/app/pages/ingestions/rdbms/rdbms.component";
 import { StreamdataComponent } from "src/app/pages/ingestions/streamdata/streamdata.component";
+import { SourceDataComponent } from "src/app/pages/ingestions/flatfile/source-data/source-data.component";
+import { ConfigureIngestionComponent } from "src/app/pages/ingestions/flatfile/configure-ingestion/configure-ingestion.component";
 
 @NgModule({
   imports: [
@@ -29,15 +30,10 @@ import { StreamdataComponent } from "src/app/pages/ingestions/streamdata/streamd
   ],
   declarations: [
     DashboardComponent,
-    UserComponent,
-    TablesComponent,
-    IconsComponent,
-    TypographyComponent,
-    NotificationsComponent,
-    MapComponent,
-    FlatfileComponent,
+    SourceDataComponent,
     RdbmsComponent,
-    StreamdataComponent
+    StreamdataComponent,
+    ConfigureIngestionComponent,
 
     // RtlComponent
   ]
